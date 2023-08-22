@@ -156,6 +156,9 @@ You can deploy this project using: **Not available**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Schema Diagram <a name="schema-diagram"></a>
+<img src="clinic_diagram.png" />
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
