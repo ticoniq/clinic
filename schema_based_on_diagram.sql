@@ -43,8 +43,11 @@ CREATE TABLE invoice_items (
 );
 
 CREATE TABLE treatments_histories (
-  treatment_id INT PRIMARY KEY REFERENCES treatments(id),
-  medical_history_id INT PRIMARY KEY REFERENCES medical_histories(id)
+  treatment_id INT,
+  medical_history_id INT,
+  PRIMARY KEY (treatment_id, medical_history_id),
+  FOREIGN KEY (treatment_id) REFERENCES treatments(id),
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories(id)
 );
 
 ALTER TABLE treatments_histories ADD CONSTRAINT fk_treatment_id FOREIGN KEY (treatment_id) REFERENCES treatments(id);
